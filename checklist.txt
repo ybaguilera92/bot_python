@@ -1,0 +1,12 @@
+CHECKLIST — BOT DE TELEGRAM 24/7
+================================
+
+[ ] 1. Bot creado con @BotFather y token guardado
+[ ] 2. Archivos guardados en la carpeta mi-bot
+[ ] 3. Entorno virtual creado y dependencias instaladas
+[ ] 4. Prueba en local superada (/start, botones, preguntas)
+[ ] 5. Código subido a GitHub (sin el token)
+[ ] 6. Web Service creado en Render con BOT_TOKEN configurada
+[ ] 7. Cron de ping cada 10 min programado en cron-job.org
+[ ] 8. Verificado desde otro dispositivo
+[ ] 9. Preguntas personalizadas y redespliegue automático OK

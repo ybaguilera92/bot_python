@@ -7,6 +7,7 @@ import os
 import re
 import threading
 import unicodedata
+import asyncio
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
@@ -171,6 +172,8 @@ class Ping(BaseHTTPRequestHandler):
 # 6) ARRANQUE
 # ------------------------------------------------------------------
 def main():
+    # Compatibilidad con Python 3.12+: crear el event loop explícitamente
+    asyncio.set_event_loop(asyncio.new_event_loop())
     if not TOKEN:
         raise SystemExit(
             'Falta el token. Define la variable de entorno BOT_TOKEN antes '
